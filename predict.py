@@ -2,11 +2,8 @@ import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 
-# Load model
-model = load_model('cat_dog_model.h5')
+model = load_model('cat_dog_model_full.h5')
 
-# List of tuples: (image_path, actual_label)
-# actual_label: 0 = cat, 1 = dog
 image_samples = [
     (r'E:\dogs-vs-cats\test1\test1\999.jpg', 0),    # cat
     (r'E:\dogs-vs-cats\test1\test1\9982.jpg', 1),   # dog

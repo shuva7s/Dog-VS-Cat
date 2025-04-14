@@ -12,7 +12,7 @@ input_shape = img_size + (3,)
 datagen = ImageDataGenerator(rescale=1./255)
 
 train_generator = datagen.flow_from_directory(
-    './dvc/train',
+    r'C:\Users\shuva\Desktop\python learning\ml\virtual_environments\dvc\train',
     target_size=img_size,
     batch_size=batch_size,
     class_mode='binary'
@@ -39,4 +39,4 @@ history = model.fit(
     epochs=10
 )
 
-model.save('./dvc_tf2/cat_dog_model_full.h5')
+model.save(r'C:\Users\shuva\Desktop\python learning\ml\virtual_environments\dvc_tf2\cat_dog_model_full.h5')
